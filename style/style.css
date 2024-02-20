@@ -1,0 +1,373 @@
+*{
+    margin: 0px;
+    padding:0px;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body ,html{
+    background: whitesmoke;
+}
+
+.upp_arrow{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 107, 107); 
+    bottom:30px;
+    right: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+}
+.upp_arrow h1{
+    font-size: 35px;
+}
+.upp_arrow a{
+    color:white;
+    text-decoration: none;
+}
+.navigation{
+    width:100%;
+    min-height: 50px;
+    background-color: rgb(255, 107, 107);  
+}
+.navigation h3{
+    padding-top:10px;
+    color: white;
+    text-align: center;
+}
+.btn_logo{
+    padding-left: 20px;
+    display: flex;
+    width: 100%;
+    background-color: whitesmoke;
+    margin-top: 10px;
+}
+.btn_logo .hidden_menu{
+    display: none;
+}
+.hidden_menu2{
+    display: none;
+}
+.btn_logo .button{
+    display: flex;
+    position: absolute;
+    right:50px;
+    margin-top: 7px;
+}
+.btn_logo .button a{
+    margin-left: 25px;
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+}
+.btn_logo .button a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width:460px){
+    .btn_logo .button{
+        display: none;
+    }
+    .btn_logo .hidden_menu{
+        display:block;
+        position: absolute;
+        right:30px;
+    }
+    .btn_logo .logo{
+        margin-top: 5px;;
+    }
+    .hidden_menu2{
+        display:block;
+        position: fixed;
+        background-color: rgb(46, 46, 46);
+        width: 0%;
+        height: 100%;
+        padding-top:70px;
+        margin-top: 20px;
+        transition: 0.4s;
+        overflow: hidden;
+    }
+    .hidden_menu2 a{
+        text-align: center;
+        font-size: 20px;
+        margin-top: 40px;
+        color: rgb(255, 255, 255);
+        text-decoration: none; 
+        display: grid;
+        height: 40px;
+    }
+    .hidden_menu2 h2{
+        font-size: 20px;
+    }
+}
+.image{
+    margin-top: 10px;
+}
+.image img{
+    width: 100%;
+    height: 500px;
+}
+
+@media (max-width:638px){
+    .image img{
+        width:100%;
+        height: 300px;
+    }
+}
+.ab{
+    text-align: center;
+}
+.img_card{
+    margin-top: 40px;
+    margin-left: 30px;
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+.img_card .im1d{
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    border: 2px solid rgb(255, 107, 107);  
+    box-shadow: 0px 0px 30px rgb(255, 107, 107);
+    margin: auto;
+    border-radius: 10px;
+    text-align:center;
+    transition: 0.4s;
+    scale:0.9;
+    cursor: pointer;
+    animation: sc 1s alternate infinite;
+}
+@keyframes sc1{
+    from{scale:0.9;box-shadow: 0px 0px 30px rgb(255, 107, 107);border: 2px solid rgb(255, 107, 107);}
+    to{scale:1.0;box-shadow: 0px 0px 30px #7b6bff; border-color: #7b6bff;  }
+}
+.img_card .im1d:hover{
+    transition: 0.4s;
+    box-shadow: 0px 0px 30px #7b6bff;
+    border-color: #7b6bff;  
+    scale:1.1;
+}
+
+.img_card .im1d button{
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+    background: rgb(255, 107, 107);
+    border:2px solid rgb(255, 107, 107);
+    color:white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgb(255, 107, 107);
+    transition: 0.4s;
+}
+.img_card .im1d button:hover{
+    background: #7b6bff;
+    box-shadow: 0px 0px 20px #7b6bff;
+    border-color: #7b6bff;
+    transition: 0.4s;
+}
+span{
+    color: rgb(255, 107, 107);
+}
+.img_card .im1d img{
+    width: 300px;
+    height: 200px;
+}
+@media (max-width:978px){
+    .img_card{
+        display: grid;
+        margin: auto;
+        margin-top: 100px;
+    }  
+    .img_card .im1d{
+        width: 90%;
+        height: 450px;
+        margin-top: 20px;
+        box-shadow: none;
+        animation: none;
+    }
+    .img_card .im1d img{
+        width: 100%;
+        height: 300px;
+        margin: auto;
+    }
+}
+.ch{
+    margin-top: 100px;
+    margin-left: 30px;
+    display: flex;
+
+}
+.ch h2{
+    margin-left: 20px;
+    margin-top: 100px;
+}
+.ch h1{
+    margin-left: 20px;
+    position: absolute;
+    color:white;
+    text-shadow: 0px 0px 10px rgb(255, 107, 107);
+    margin-top: 150px;
+    margin-left: 150px;
+    font-size: 35px;
+}
+.ch img{
+    border:2px solid rgb(255, 107, 107);
+    border-radius:10px;
+    box-shadow: 0px 0px 30px rgb(255, 107, 107);
+}
+
+@media (max-width:978px){
+    .ch{
+        display: grid;
+    }
+    .ch h2{
+    margin-left: 20px;
+    margin-top: 100px;
+     }
+.ch h1{
+    margin-left: 20px;
+    position: absolute;
+    color:black;
+    text-shadow: 0px 0px 10px rgb(255, 107, 107);
+    margin-top: 460px;
+    text-align: center;
+    font-size: 35px;
+}
+
+.ch img{
+    border:2px solid rgb(255, 107, 107);
+    border-radius:10px;
+    box-shadow: 0px 0px 30px rgb(255, 107, 107);
+    width: 97%;
+    height: 410px;
+}
+
+
+}
+.service{
+    margin-top:50px;
+    text-align: center;
+    height: 200px;
+    width: 100%;
+}
+.pic{
+    height: 700px;
+    width: 100%;
+    display: flex;
+}
+.pic .card{
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: 0px 0px 30px  rgb(255, 107, 107);
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+    border:2px solid rgb(255, 107, 107);
+    cursor: default;
+    scale:0.9;
+    transition: 0.6s;
+}
+.pic  .card:hover{
+    scale:1.0;
+}
+.pic .card img{
+    width: 300px;
+    height: 240px;
+}
+
+
+@media(max-width: 978px){
+    .pic{
+        display: grid;
+    }
+}
+
+.contact{
+    width: 100%;
+    height: 500px;
+    background: rgb(255, 107, 107);
+    text-align: center;
+}
+.contact .inp{
+    width: 320px;
+    height: 400px;
+    margin: auto;
+    margin-top: 100px;
+    color:white;
+    text-shadow: 0px 0px 30px white;
+}
+.contact .inp input{
+    width:230px;
+    height: 30px;
+    background: white;
+    border: 2px white solid;
+    border-radius:5px;
+    outline: none;
+    padding-left: 10px;
+}
+.contact .inp input:focus{
+    border-color: green;
+}
+.contact .inp textarea{
+    width: 240px;
+    height: 200px;
+    border-radius: 5px;
+}
+.contact .inp button{
+    margin-top: 20px;
+    width: 240px;
+    height: 30px;
+    cursor: pointer;
+    background: white;
+    box-shadow: 0px 0px 30px white;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.contact .inp button:hover{
+    scale:1.1;
+}
+.contact .inp button:active{
+    scale:1.1;
+}
+.foter{
+    background: #ffd3d3;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+.foter .flex{
+    margin-top: 100px;
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    margin-top:70px;
+    overflow: hidden;
+}
+.foter .flex a{
+    font-size: 20px;
+    text-decoration: none;
+    color:black;
+    text-shadow: 0px 0px 20px white;
+    transition: 0.4s;
+}
+.foter .flex a:hover{
+    color:rgb(255, 107, 107);
+    font-size: 25px;
+}
+.foter .flex svg{
+    margin-left: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.foter .flex svg:hover{
+    scale:1.1;
+    color:rgb(255, 107, 107);
+}
